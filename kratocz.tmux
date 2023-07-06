@@ -101,3 +101,8 @@ bind BTab select-pane -t:.-
 unbind '"'
 bind '"' choose-window
 
+# -- bindings for changing window order --------
+
+bind-key -r "<" swap-window -d -t -1
+bind-key -r ">" swap-window -d -t +1
+
