@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Plugin homepage: https://github.com/kratocz/tmux-kratocz
 
 # -- from: https://github.com/ddollar/tmux/blob/master/examples/screen-keys.conf ----
@@ -12,97 +14,97 @@
 # tmux but not in screen.
 
 # Set the prefix to ^A.
-#unbind C-b
-set -g prefix ^A
-bind a send-prefix
+#tmux unbind C-b
+tmux set -g prefix ^A
+tmux bind a send-prefix
 
 # Bind appropriate commands similar to screen.
 # lockscreen ^X x
-unbind ^X
-bind ^X lock-server
-unbind x
-bind x lock-server
+tmux unbind ^X
+tmux bind ^X lock-server
+tmux unbind x
+tmux bind x lock-server
 
 # screen ^C c
-unbind ^C
-bind ^C new-window
-unbind c
-bind c new-window
+tmux unbind ^C
+tmux bind ^C new-window
+tmux unbind c
+tmux bind c new-window
 
 # detach ^D d
-unbind ^D
-bind ^D detach
+tmux unbind ^D
+tmux bind ^D detach
 
 # displays *
-unbind *
-bind * list-clients
+tmux unbind *
+tmux bind * list-clients
 
 # next ^@ ^N sp n
-unbind ^@
-bind ^@ next-window
-unbind ^N
-bind ^N next-window
-unbind " "
-bind " " next-window
-unbind n
-bind n next-window
+tmux unbind ^@
+tmux bind ^@ next-window
+tmux unbind ^N
+tmux bind ^N next-window
+tmux unbind " "
+tmux bind " " next-window
+tmux unbind n
+tmux bind n next-window
 
 # title A
-unbind A
-bind A command-prompt "rename-window %%"
+tmux unbind A
+tmux bind A command-prompt "rename-window %%"
 
 # other ^A
-unbind ^A
-bind ^A last-window
+tmux unbind ^A
+tmux bind ^A last-window
 
 # prev ^H ^P p ^?
-unbind ^H
-bind ^H previous-window
-unbind ^P
-bind ^P previous-window
-unbind p
-bind p previous-window
-unbind BSpace
-bind BSpace previous-window
+tmux unbind ^H
+tmux bind ^H previous-window
+tmux unbind ^P
+tmux bind ^P previous-window
+tmux unbind p
+tmux bind p previous-window
+tmux unbind BSpace
+tmux bind BSpace previous-window
 
 # windows ^W w
-unbind ^W
-bind ^W list-windows
-unbind w
-bind w list-windows
+tmux unbind ^W
+tmux bind ^W list-windows
+tmux unbind w
+tmux bind w list-windows
 
 # quit \
-unbind \
-bind \ confirm-before "kill-server"
+tmux unbind \
+tmux bind \ confirm-before "kill-server"
 
 # kill K k
-unbind K
-bind K confirm-before "kill-window"
-unbind k
-bind k confirm-before "kill-window"
+tmux unbind K
+tmux bind K confirm-before "kill-window"
+tmux unbind k
+tmux bind k confirm-before "kill-window"
 
 # redisplay ^L l
-unbind ^L
-bind ^L refresh-client
-unbind l
-bind l refresh-client
+tmux unbind ^L
+tmux bind ^L refresh-client
+tmux unbind l
+tmux bind l refresh-client
 
 # split -v |
-unbind |
-bind | split-window
+tmux unbind |
+tmux bind | split-window
 
 # :kB: focus up
-unbind Tab
-bind Tab select-pane -t:.+
-unbind BTab
-bind BTab select-pane -t:.-
+tmux unbind Tab
+tmux bind Tab select-pane -t:.+
+tmux unbind BTab
+tmux bind BTab select-pane -t:.-
 
 # " windowlist -b
-unbind '"'
-bind '"' choose-window
+tmux unbind '"'
+tmux bind '"' choose-window
 
 # -- bindings for changing window order --------
 
-bind-key -r "<" swap-window -d -t -1
-bind-key -r ">" swap-window -d -t +1
+tmux bind-key -r "<" swap-window -d -t -1
+tmux bind-key -r ">" swap-window -d -t +1
 
