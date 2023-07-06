@@ -8,7 +8,7 @@ This is a tmux plugin defining my favorite key bindings.
 
 ### Features
 
-* screen key bindings from https://github.com/ddollar/tmux/blob/ac408631381ab8568e6a1dadb0db9656ea6faac9/examples/screen-keys.conf
+* screen key bindings copied from the file [examples/screen-keys.conf](https://github.com/ddollar/tmux/blob/ac408631381ab8568e6a1dadb0db9656ea6faac9/examples/screen-keys.conf) in the GitHub project [ddollar/tmux](https://github.com/ddollar/tmux)
 * Both shortcuts work as prefix: ^A and ^B
 * Change current window index in the list by pressing `prefix + <` or `prefix + >` (both are repeatable)
 
