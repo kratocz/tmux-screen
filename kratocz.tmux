@@ -91,7 +91,7 @@ tmux bind l refresh-client
 
 # split -v "|"
 tmux unbind "|"
-tmux bind | split-window
+tmux bind "|" split-window
 
 # :kB: focus up
 tmux unbind Tab
