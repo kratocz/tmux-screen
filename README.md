@@ -5,7 +5,6 @@ This is a tmux plugin defining my favorite key bindings.
 ### Requirements
 
 * tmux
-* tpm or https://github.com/gpakosz/.tmux
 
 ### Features
 
@@ -13,7 +12,7 @@ This is a tmux plugin defining my favorite key bindings.
 * Both shortcuts work as prefix: ^A and ^B
 
 
-### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
+### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) or [gpakosz/.tmux](https://github.com/gpakosz/.tmux) (recommended)
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
@@ -32,7 +31,7 @@ Clone the repo:
 Add this line to the bottom of `.tmux.conf`:
 
 ```tmux
-run-shell ~/clone/path/sensible.tmux
+run-shell ~/clone/path/kratocz.tmux
 ```
 
 Reload TMUX environment with `$ tmux source-file ~/.tmux.conf`, and that's it.
