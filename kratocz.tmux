@@ -73,9 +73,9 @@ tmux bind ^W list-windows
 tmux unbind w
 tmux bind w list-windows
 
-# quit \
-tmux unbind \
-tmux bind \ confirm-before "kill-server"
+# quit "\\"
+tmux unbind "\\"
+tmux bind "\\" confirm-before "kill-server"
 
 # kill K k
 tmux unbind K
@@ -89,8 +89,8 @@ tmux bind ^L refresh-client
 tmux unbind l
 tmux bind l refresh-client
 
-# split -v |
-tmux unbind |
+# split -v "|"
+tmux unbind "|"
 tmux bind | split-window
 
 # :kB: focus up
