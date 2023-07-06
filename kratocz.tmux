@@ -35,9 +35,9 @@ tmux bind c new-window
 tmux unbind ^D
 tmux bind ^D detach
 
-# displays *
-tmux unbind *
-tmux bind * list-clients
+# displays "*"
+tmux unbind "*"
+tmux bind "*" list-clients
 
 # next ^@ ^N sp n
 tmux unbind ^@
