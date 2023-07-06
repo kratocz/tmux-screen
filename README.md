@@ -7,7 +7,7 @@ This is a tmux plugin defining my favorite key bindings.
 * tmux
 * tpm or https://github.com/gpakosz/.tmux
 
-### Plugin features
+### Features
 
 * screen key bindings from https://github.com/ddollar/tmux/blob/ac408631381ab8568e6a1dadb0db9656ea6faac9/examples/screen-keys.conf
 * Both shortcuts work as prefix: ^A and ^B
