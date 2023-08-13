@@ -102,3 +102,9 @@ tmux bind BTab select-pane -t:.-
 # " windowlist -b
 tmux unbind '"'
 tmux bind '"' choose-window
+
+# -- Additional modifications --
+
+# Allow to escape the copy-mode (opened by <prefix> [) by not only Escape, but also by BSpace
+tmux bind-key -T copy-mode Escape send-keys -X cancel
+tmux bind-key -T copy-mode BSpace send-keys -X cancel
