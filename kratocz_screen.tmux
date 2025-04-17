@@ -15,7 +15,7 @@
 
 # Set the prefix to ^A.
 #tmux unbind C-b
-tmux set -g prefix ^A
+#tmux set -g prefix ^A
 tmux bind a send-prefix
 
 # Bind appropriate commands similar to screen.
